@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.todo-input {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #f8f9fa;
+    position: fixed; /* Fixed to keep it in place */
+    left: 0;
+    height: 100vh;
+}
+
+.todo-input input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.todo-input button {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.todo-list {
+    width: 80%;
+    margin-left: 20%; /* Push the list to the right */
+    padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+th {
+    text-align: center;
+    background: #f4f4f4;
+}
+.actions{
+    margin: 10px;
+}
+.edit-btn {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px; /* Adds space between edit and delete buttons */
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+td:nth-child(1), th:nth-child(1) { /* Date column */
+    text-align: center;
+}
+
+td:nth-child(2), th:nth-child(2) { /* Task column */
+    text-align: left;
+    padding-left: 10px;
+}
+
+td:nth-child(3), th:nth-child(3) { /* Actions column */
+    text-align: center;
+}
