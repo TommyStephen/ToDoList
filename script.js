@@ -93,7 +93,7 @@ function editTask(index) {
 // Delete task function
 function deleteTask(index) {
     let taskArray = JSON.parse(localStorage.getItem("tasks"));
-    tasks.splice(index, 1);
+    taskArray.splice(index, 1);
     localStorage.setItem("tasks", JSON.stringify(taskArray));
     loadTasks();
 }
